@@ -1,0 +1,99 @@
+@import url("photographer.css");
+@import url("header.css");
+/* @import url("media-queries.css"); */
+@import url("root.css");
+
+.photographer_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+  margin-top: 100px;
+}
+
+.photographer_section_profile {
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.photographer_section_profile_link {
+  text-align: center;
+}
+
+.photographer_section_profile p {
+  line-height: 1.6;
+}
+
+.photographer_section_profile_link img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.photographer_section_profile_link_picture {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: -2px 2px 20px rgb(0 0 0 / 25%);
+  margin: 0 auto;
+}
+
+.photographer_section_profile_link_name {
+  color: #d3573c;
+  font-size: 2.25em;
+  font-weight: 400;
+}
+
+.photographer_section_profile_location {
+  font-size: 1.125em;
+  color: #901c1c;
+}
+
+.photographer_section_profile_description {
+  font-weight: 400;
+  font-size: 0.875em;
+  text-align: center;
+  color: #000000;
+}
+
+/* MEDIAS QUIERIES */
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  h1 {
+    font-size: 1.75em;
+    margin-right: 0px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    margin-top: 40px;
+  }
+
+  .photographer_section_profile_link_name {
+    font-size: 1.75em;
+  }
+
+  .logo {
+    margin-left: 0px;
+    margin-bottom: 20px;
+    height: 35px;
+  }
+  .photographer_section {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .photographer_section {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    margin-top: 75px;
+  }
+}
